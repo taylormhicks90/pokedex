@@ -1,0 +1,85 @@
+body {
+    background-image: url('https://external-preview.redd.it/NXrR_qnMRHrwUoE8pbeiX26fq4mNctFsmdEghRVApSQ.jpg?auto=webp&s=b18e1b0df84f417036d4e1ac0affb6245a071ebf');
+    background-position: 50% 20%;
+    background-attachment: fixed;
+}
+
+html, * {
+    font-family: "VT323", sans-serif;
+    font-size: 18px;
+    color: #FFF
+}
+
+.logo {
+    width: 27em;
+    font-size: 0.7em;
+}
+
+.search {
+    background: rgba(103, 103, 103, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.btn-custom, .btn-custom:hover, .btn.show {
+    background: rgba(0, 0, 0 ,0.6);
+    backdrop-filter: blur(5px);
+    color: #FFF;
+}
+
+.card {
+    backdrop-filter: blur(25px) saturate(137%);
+    -webkit-backdrop-filter: blur(25px) saturate(137%);
+    background-color: rgba(69, 146, 196, 0.3);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.card-bg-normal { background: rgba(217, 217, 217, 0.22); }
+.card-bg-water { background: rgba(66, 224, 250, 0.22); }
+.card-bg-grass { background: rgba(135, 238, 88, 0.22); }
+.card-bg-electric { background: rgba(255, 221, 0, 0.22); }
+.card-bg-rock { background: rgba(163, 140, 33, 0.22); }
+.card-bg-fire { background: rgba(255, 176, 55, 0.22);}
+.card-bg-bug { background: rgba(162, 216, 103, 0.22); }
+.card-bg-ghost { background: rgba(123, 98, 163, 0.22); }
+.card-bg-psychic { background: rgba(243, 102, 185, 0.22); }
+.card-bg-poison { background: rgba(185, 127, 201, 0.22); }
+.card-bg-fighting { background: rgba(213, 103, 35, 0.22); }
+.card-bg-ground { background: rgba(171, 152, 66, 0.22); }
+.card-bg-dragon { background: rgba(240, 109, 86, 0.22); }
+.card-bg-fairy { background: rgba(204, 204, 255, 0.22); }
+.card-bg-steel { background: rgba(220, 219, 219, 0.22); }
+.card-bg-ice { background: rgba(58, 171, 193, 0.22); }
+.card-bg-dark { background: rgba(123, 123, 123, 0.22); }
+
+.badge { margin: 0 6px 0 0; }
+
+.text-bg-normal { background: #d9d9d9; }
+.text-bg-water { background: #3aabc1; }
+.text-bg-grass { background: #80cb3b; }
+.text-bg-electric { background: #eed535; }
+.text-bg-rock { background: #a38c21; }
+.text-bg-fire { background: #fd7d24; }
+.text-bg-bug { background: #719f3f; }
+.text-bg-ghost { background: #7b62a3; }
+.text-bg-psychic { background: #f366b9; }
+.text-bg-poison { background: #b97fc9; }
+.text-bg-fighting { background: #d56723; }
+.text-bg-ground { background: #ab9842; }
+.text-bg-dragon { background: #f06d56; }
+.text-bg-fairy { background: #ccccff; }
+.text-bg-steel { background: #dcdbdb; }
+.text-bg-ice { background: #3aabc1; }
+.text-bg-flying { background: #2077d7; }
+.text-bg-dark { background: #333; }
+
+.filter span { font-size: 0.9em; }
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.card { transition: .2s ease-in-out; }
+.card:hover { margin-top: -15px;}
