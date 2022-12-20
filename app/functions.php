@@ -88,12 +88,12 @@ function resultsToCollection(array|object $pokemon): array
 
 function getCache()
 {
-    return json_decode(file_get_contents('public/cache/poke.cache'), true);
+    return json_decode(file_get_contents(__DIR__.'/../public/cache/poke.cache'), true);
 }
 
 function setCache(string|array $response)
 {
-    file_put_contents('public/cache/poke.cache', json_encode($response));
+    file_put_contents(__DIR__.'/../public/cache/poke.cache', json_encode($response));
 
     return getCache();
 }

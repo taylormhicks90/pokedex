@@ -19,7 +19,7 @@ const apiCall = async () => {
     const form = new FormData
     form.append('offset', offset)
 
-    await fetch('../load.php', {
+    await fetch('../app/api/load.php', {
         method: "POST",
         body: form,
     }).then(data => data.json())

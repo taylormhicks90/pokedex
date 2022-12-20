@@ -8,7 +8,7 @@ for(let type of filterTypes) {
         form.append('type', e.target.dataset.type)
 
         const pokemon = async () => {
-            const response = await fetch('../filter.php', {
+            const response = await fetch('../app/api/filter.php', {
                 method: 'POST',
                 body: form
             })
@@ -63,6 +63,7 @@ for(let type of filterTypes) {
 
                    const pokeName = document.createElement('p');
                    pokeName.classList.add('h5', 'mt-2')
+
                    pokeName.innerText = pokemon.name
 
                    cardText.appendChild(cardTop)

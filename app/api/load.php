@@ -1,6 +1,6 @@
 <?php
 
-include 'app/functions.php';
+include '../functions.php';
 
 $response = loadNewSet(options: ['offset' => htmlspecialchars($_POST['offset'])]);
 

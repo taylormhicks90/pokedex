@@ -1,6 +1,6 @@
 <?php
 
-include 'app/functions.php';
+include '../functions.php';
 
 $response = filter(type: htmlspecialchars($_POST['type']));
 
