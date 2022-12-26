@@ -47,17 +47,13 @@
                 <div class="card-body">
                     <div class="row">
                         <?php
-                        $sprites = [];
-                        array_walk_recursive($pokemon['sprites'], function ($value) use (&$sprites) {
-                            if (!is_null($value)) {
-                                $sprites[] = $value;
-                            }
-                        });
-                        foreach ($sprites as $sprite): ?>
-                            <div class="col">
-                                <img src='<?= $sprite ?>' class='img' width='150'/>
-                            </div>
-                        <?php endforeach; ?>
+                        array_walk_recursive($pokemon['sprites'], function ($sprite) {
+                            if (!is_null($sprite)):?>
+                                <div class="col">
+                                    <img src='<?= $sprite ?>' class='img' width='150'/>
+                                </div>
+                            <?php endif;
+                        }); ?>
                     </div>
                 </div>
             </div>
